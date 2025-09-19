@@ -20,7 +20,6 @@
             background-color: #f0f0f0;
         }
 
-        /* Contêiner principal para toda a página. Garante que os elementos se organizem em coluna. */
         #main-container {
             display: flex;
             flex-direction: column;
@@ -43,10 +42,9 @@
             margin-bottom: 20px;
         }
         
-        /* O contêiner do mapa agora ocupa o espaço restante verticalmente. */
         #mapa-container {
             width: 100%;
-            flex-grow: 1; /* Permite que o mapa ocupe todo o espaço disponível. */
+            flex-grow: 1;
             border: 2px solid #333;
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -60,8 +58,9 @@
         }
         
         #data-select {
-            padding: 10px 15px;
-            font-size: 1em;
+            /* Diminuição do tamanho em cerca de 35% */
+            padding: 7px 10px;
+            font-size: 0.75em;
             font-weight: bold;
             border-radius: 8px;
             border: 2px solid #4A90E2;
