@@ -20,6 +20,7 @@
             background-color: #f0f0f0;
         }
 
+        /* Contêiner principal para toda a página. Garante que os elementos se organizem em coluna. */
         #main-container {
             display: flex;
             flex-direction: column;
@@ -42,13 +43,13 @@
             margin-bottom: 20px;
         }
         
+        /* O contêiner do mapa agora ocupa o espaço restante verticalmente. */
         #mapa-container {
             width: 100%;
-            height: 100%;
+            flex-grow: 1; /* Permite que o mapa ocupe todo o espaço disponível. */
             border: 2px solid #333;
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-            position: relative;
         }
 
         #mapa {
